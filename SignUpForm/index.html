@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>فرم ثبت نام</h1>
+    </header>
+
+    <main>
+
+    <form method="post">
+      <label for="name">نام و نام خانوادگی :</label>
+      <input type="text" name="name" id="name" required autocomplete="name">
+
+      <br /><br />
+      <label for="email">أدرس ایمیل :</label>
+      <input type="email" name="email" id="email" required autocomplete="email">
+
+      <br /><br />
+      <label for="password">رمز عبور :</label>
+      <input type="password" name="password" id="password" required minlength="5" maxlength="10" autocomplete="new-password">
+
+
+      <br /><br />
+      <label for="phone">شماره تلفن همراه :</label>
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="11" autocomplete="tel">
+
+      <br /><br />
+
+      <label for="job">شغل :</label>
+      <select name="job" id="job">
+      <option value="">انتخاب کنید ...</option>
+      <option value="Designer">UI Designer</option>
+      <option value="FrontEnd">FrontEnd Dev.</option>
+      <option value="BackEnd" disabled>BackEnd Dev.</option>
+      <option value="Software">Software Eng.</option>
+      </select>
+
+
+      <br /><br />
+
+      <input type="submit" value="ثبت نام">
+    </form>
+  </body>
+</html>
