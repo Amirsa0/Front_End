@@ -1,0 +1,11 @@
+body #container h1 {
+    color: darkblue !important;
+}
+
+div + h2 {
+    color: darkgreen !important;
+}
+
+h1+p , h2+p {
+    color: chocolate !important;
+}
