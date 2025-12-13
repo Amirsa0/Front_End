@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 80%;
+  max-width: 768px;
+  margin: auto;
+  border-collapse: collapse;
+
+
+}
+
+td {
+  padding: 16px 0px;
+  border: 3px solid #212f3c;
+  color: #85929e;
+  text-align: center;
+  
+}
+
+#cell-1, #cell-2, #cell-3, #cell-4, #cell-8, #cell-15{
+  color: #eaeded;
+  background-color: #5d6d7e;
+  
+}
+
+#cell-7, #cell-11, #cell-14 {
+  color: #34495e;
+  background-color: #d5d8dc;
+}
+
+#cell-16 {
+  color: #212f3c;
+  background-color: #aeb6bf;
+}
