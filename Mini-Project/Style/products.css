@@ -1,0 +1,93 @@
+.main-content {
+    grid-area: main-content;
+    padding: var(--largest);
+    overflow-y: auto;
+    background-color: var(--gray-ultra-light);
+}
+
+.form-container form{
+    margin: var(--large) 0;
+    padding: var(--largest);
+    background-color: var(--white);
+    border-radius: var(--smallest);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--largest);
+} 
+
+.form-container .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: var(--large);
+
+}
+
+.form-container input {
+    height: 40px;
+    padding: 0 var(--largest);
+    border: 1px solid var(--gray);
+    border-radius: 4px ;
+    
+
+}
+
+
+.form-container button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--smallest);
+    padding: var(--smallest) var(--largest);
+
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(2,1fr) ;
+    gap: var(--largest);
+}
+
+.products-list .card {
+    background-color: var(--white);
+    padding: var(--medium);
+    border-radius: var(--smallest);
+    display: flex;
+    flex-direction: column;
+    gap: var(--large);
+
+}
+
+.products-list .card img {
+    width: 100%;
+}
+
+.products-list .card h4 {
+    color: var(--primary);
+}
+
+.products-list .card button {
+    background-color: var(--gray);
+    color: var(--secondary);
+    border: none;
+    border-radius: var(--smallest);
+    padding: var(--smallest) var(--largest);
+
+}
+
+
+
+
+@media (max-width:768px) {
+    .products-list h3 {
+        font-size: var(--medium);
+    }
+
+    .products-list{
+        grid-template-columns: repeat(2,1fr) ;
+        grid-template-rows: repeat(2,1fr);
+    }
+}

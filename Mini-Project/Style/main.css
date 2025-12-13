@@ -1,0 +1,61 @@
+@import url("./header.css");
+@import url("./sidebar.css");
+@import url("./products.css");
+
+
+:root {
+    /* Colors */
+    --primary: #4880FF ; 
+    --secondary: #202224 ; 
+    --background : #F5F6FA ;
+    --button-background: #e2eaf8;
+    --light-blue: rgba(72,128,255,0.2);
+    --white: rgb(249,248,248) ;
+    --gray: rgb(185,185,185) ;
+    --gray-light:rgb(230,230,230) ;
+    --gray-ultra-light:rgb(244,244,244);
+
+    /* Sizes */
+    --largest:20px;
+    --large:18px;
+    --medium:16px;
+    --small:14px;
+    --smallest:12px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+
+.admin-panel {
+    display: grid;
+    grid-template-areas: 
+    "left-header right-header"
+    "sidebar main-content";
+    grid-template-columns:250px 1fr ;
+    grid-template-rows:60px 1fr  ;
+    height: 100vh;
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    .admin-panel {
+        grid-template-areas: 
+        "right-header"
+        "main-content";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr;
+
+    }
+}
