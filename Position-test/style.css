@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "yekan";
+  src: url(./assets/fonts/Yekan-normal.ttf);
+}
+* {
+  font-family: "yekan", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  background-color: white;
+  padding: 30px 10px;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+}
+
+.card {
+  width: 22%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: dodgerblue;
+  position: relative;
+  display: inline-block;
+
+}
+
+.card_title {
+  color: #fff;
+}
+
+.card_body p {
+  color: #fff;
+}
+
+.card_header img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 10px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-info {
+  background-color: #eee;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.btn-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #ddd;
+  opacity: 0.8;
+  color: #666;
+  font-size: 20px;
+  position: absolute;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+.badge {
+  border-radius: 20px;
+  padding: 0 10px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+}
+
+.badge-alert {
+  background-color: tomato;
+  color: #fff;
+}
